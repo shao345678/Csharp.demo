@@ -6,12 +6,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FTI(30));
+            Point p1 = new Point();
+            p1.x = 1;
+            Point p2 = p1;
+            Console.WriteLine(p1.x);
+            Console.WriteLine(p2.x);
+            p1.x = 9;
+            Console.WriteLine(p1.x);
+            Console.WriteLine(p2.x);
+
         }
-        static int FTI(int feet)
+        public struct Point
         {
-            int inches = feet * 12;
-            return inches;
+            public int x;
+            public int y;
         }
+
     }
 }
