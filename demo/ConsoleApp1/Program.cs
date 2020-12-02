@@ -17,6 +17,12 @@ namespace ConsoleApp1
             Console.WriteLine(1.GetType());
             int m = int.MaxValue;m++;
             Console.WriteLine(1.0/3+ 1.0 / 3 + 1.0 / 3 ==1);
+            
+        }
+        void foo(int x, int y) { }
+        void test()
+        {
+            foo(1, 1);
         }
         public struct Point
         {
